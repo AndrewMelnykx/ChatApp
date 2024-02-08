@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="mainDiv">
+        <button class="settingsBtn">Settings</button>
+
+<dialog class="popupDialog">
+    <div class="popupDiv">
+        <p><b>Settings</b></p>
+        <form class="popupForm">
+            <input type="text" placeholder="Stive" class="popupInp">
+            <button class="popupSentBtn">-></button>
+        </form>
+    
+    <button class="closeDialogBtn">X</button>
+</div>
+</dialog>
+<dialog class="popupsignup">
+    <div class="popupDiv">
+        <p>Authorization</p>
+        <form class="signUpForm" name="emailInp">
+            <label for="emailInp">Email:</label>
+            <input type="text" class="signUp">
+            <button class="sentCode">Sent   code</button>
+            <button class="verifyCode">Verify code</button>
+            <div class="errorDiv"></div>
+        </form>
+    
+    <button class="closeSignUpBtn">X</button>
+</div>
+</dialog>
+<dialog class="verificatioPopup">
+    <div class="popupDiv">
+        <p>Verification</p>
+        <form class="verifyForm" name="verInput">
+            <label for="verInput">Code:</label>
+            <input type="text" class="verInput">
+            <button class="sentForVerify">Sign in</button>
+        </form>
+    
+    <button class="closeVerifyBtn">X</button>
+</div>
+</dialog>
+        <button class="exitBtn">Exit</button>
+        <div class="textDiv">
+            <ul class="textUl">
+                <template id="myTemplate">
+                <li class="text"><span class="nickName">Me:</span>
+                    <span class="messageText">Hello!</span>
+                <span class="time"><i>00:00</i></span>
+                    <button class="attachBtn">Pin</button>
+                    <p class="messageID"></p>
+                </li>
+            </template>
+            </ul>
+        </div>
+        <form class="formForInput">
+        <input type="text" class="textInput" placeholder="message...">
+        <button class="textBtn">-></button>
+    </form>
+    </div>
+</body>
+<script type="module" src="chat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</html>
+

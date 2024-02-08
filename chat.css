@@ -1,0 +1,246 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+.textInput{
+    width: 67%;
+    height: 8%;
+    background-color: transparent;
+    border: 1px solid  black ;
+    margin-top: 1%;
+}
+.textBtn{
+background-color: transparent;
+border: 1px solid black;
+height: 5.5%;
+}
+.settingsBtn{
+    background-color: transparent;
+    border: 1px solid black;
+    margin-right: 48%;
+    margin-bottom: 1%;
+    height: 5%;
+}
+.exitBtn{
+    background-color: transparent;
+    border: 1px solid black;
+    height: 5%;
+    width: 10%;
+}
+
+.mainDiv{
+    text-align: center;
+    width: 25%;
+    height: 70%;
+}
+.textDiv {
+    margin: auto;
+    border: 1px solid black;
+    width: 70%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow:auto ;
+}
+
+.textUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+    width: 100%;
+    overflow: auto;
+}
+
+.text {
+    margin-bottom: 3px;
+    padding:  6% 7%; 
+   width: fit-content;
+   background-color:  #E5E5E5;
+   text-align: center;
+   overflow: auto;
+}
+
+.text::after {
+    content: "";
+    flex-grow: 1;
+}
+.messageText {
+    margin-right: 5px;
+    padding:1%;
+}
+
+.time {
+    display: block; 
+    margin-top: -1%; 
+    margin-left: 80%;
+    font-size: 14px;
+}
+#popupDialog {
+    display: none;
+    border: none;
+    position: relative;
+}
+
+.closeDialogBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px; 
+    background-color: white;
+    border: none;
+}
+
+.popupDiv {
+    margin-bottom: 100px;
+   
+}
+
+.popupDialog {
+    border: none;
+    width: 260px;
+    height: 260px;
+    background-color: white;
+}
+
+.popupInp{
+    height: 25px;
+}
+.popupSentBtn{
+    background-color: white;
+    height: 28px;
+    border: 1px solid black;
+}
+.anotherText {
+    margin-bottom: 5px;
+    margin-left: 40%;
+    margin-right: auto;
+    padding: 10px;
+    width: fit-content;
+    background-color: #E5E5E5;
+    text-align: center;
+    white-space: nowrap; 
+    overflow: auto;
+}
+.formForInput input.textInput{
+    width:67%;
+    height: 20px;
+}
+.formForInput button.textBtn{
+   height:22px;
+}
+.sentCode{
+    background-color: white;
+    height: 28px;
+    border: 1px solid black;
+    margin-bottom: 10%;
+    width: 48%;
+    margin: 5%;
+}
+.verifyCode{
+    background-color: white;
+    height: 28px;
+    border: 1px solid black;
+
+}
+#popupsignup {
+    display: none;
+    border: none;
+    position: relative;
+}
+.closeSignUpBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px; 
+    background-color: white;
+    border: none;
+    
+}
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signUp {
+    width: 95%;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+label {
+    margin-bottom: 2px; 
+    margin-right: 72%;
+}
+.closeVerifyBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px; 
+    background-color: white;
+    border: none;
+}
+.sentForVerify{
+    position:absolute;
+    background-color: white;
+    height: 15%;
+    margin: 23%;
+}
+.verifyForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.verifyForm input{
+    height: 18px;
+
+}
+.attachBtn{
+    display: none;
+    background-color:whitesmoke;
+    width: 45px;
+}
+.attachedDiv{
+    width:160px;
+    height: 27px;
+    border: none;
+    position: fixed;
+    top: 14%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    text-align: bottom;
+    margin: 0;
+    padding: 0;
+    
+}
+.attachedDiv button {
+    margin-left: 135px;
+    margin-top: calc(15% + 1px);
+    position: absolute;
+    top: calc(-10% + 1px);
+    left: 0;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.messageID{
+    display:none;
+}
+.messageIDFromAttached{
+    display:none;
+}
+.invalid{
+    border-color: red;
+}
+.errorDiv{
+    color: red;
+}
+.newBackground{
+    background-color: #FFDAB9;
+}
